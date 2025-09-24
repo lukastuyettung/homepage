@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cô Hà Gamezone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #6c5ce7;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+    }
+    .card {
+      width: 280px;
+      height: 180px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg) scale(1.05);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .card-front {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .card-back {
+      background: #6c5ce7;
+      color: #fff;
+      transform: rotateY(180deg);
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Cô Hà Gamezone 🎀</h1>
+  <p>Cảm ơn các bạn đã lựa chọn xem live của cô Hà.<br>Chúc các bạn một ngày vui vẻ 🌸</p>
+
+  <div class="grid">
+    <!-- Game 1 -->
+    <a href="https://your-game1.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game1.png');"></div>
+        <div class="card-back"><span>Game 1</span></div>
+      </div>
+    </a>
+    <!-- Game 2 -->
+    <a href="https://your-game2.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game2.png');"></div>
+        <div class="card-back"><span>Game 2</span></div>
+      </div>
+    </a>
+    <!-- Game 3 -->
+    <a href="https://your-game3.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game3.png');"></div>
+        <div class="card-back"><span>Game 3</span></div>
+      </div>
+    </a>
+    <!-- Game 4 -->
+    <a href="https://your-game4.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game4.png');"></div>
+        <div class="card-back"><span>Game 4</span></div>
+      </div>
+    </a>
+    <!-- Game 5 -->
+    <a href="https://your-game5.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game5.png');"></div>
+        <div class="card-back"><span>Game 5</span></div>
+      </div>
+    </a>
+    <!-- Game 6 -->
+    <a href="https://your-game6.vercel.app" class="card" target="_blank">
+      <div class="card-inner">
+        <div class="card-front" style="background-image:url('/images/game6.png');"></div>
+        <div class="card-back"><span>Game 6</span></div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
